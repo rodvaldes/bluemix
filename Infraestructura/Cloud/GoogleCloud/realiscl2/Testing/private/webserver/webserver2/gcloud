@@ -1,0 +1,2 @@
+gcloud compute --project "realiscl2" instances create "webserver2" --zone "us-central1-a" --machine-type "n1-standard-1" --network "default" --maintenance-policy "MIGRATE" --scopes "https://www.googleapis.com/auth/devstorage.read_only" "https://www.googleapis.com/auth/logging.write" --tags "http-server" --image "https://www.googleapis.com/compute/v1/projects/ubuntu-os-cloud/global/images/ubuntu-1410-utopic-v20150509" --boot-disk-type "pd-standard" --boot-disk-device-name "webserver2"
+
